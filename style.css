@@ -1,0 +1,119 @@
+/* style.css */
+.frame-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ef579d;
+    width: 100%;
+    height: 129px;
+}
+.frame-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ef579d;
+    width: 100%;
+    height: 102px;
+}
+.carofoto-1-icon {
+    position: absolute;
+    top: 166px;
+    left: 24px;
+    border-radius: 50px;
+    width: 377px;
+    height: auto;
+    max-width: 90%;
+    object-fit: cover;
+}
+.uade-1-icon {
+    position: absolute;
+    top: 745px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 216px;
+    height: 72px;
+    object-fit: cover;
+}
+.nombre-y-apellido {
+    margin: 0;
+    font-size: 24px;
+}
+.nombre-y-apellido-container {
+    position: absolute;
+    top: 168px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 90%;
+    max-width: 776px;
+    padding-top: 10px;
+}
+.diseo-y-desarrollo {
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-family: Marcellus;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    max-width: 554px;
+}
+.rectangle-parent {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 100%;
+    min-height: 832px;
+    overflow: hidden;
+    text-align: left;
+    color: #000;
+    font-family: Mandali;
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .carofoto-1-icon {
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+    .uade-1-icon {
+        top: auto;
+        bottom: 120px;
+        width: 150px;
+        height: 50px;
+    }
+    .nombre-y-apellido-container {
+        top: 350px;
+        width: 90%;
+        font-size: 20px;
+    }
+    .diseo-y-desarrollo {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carofoto-1-icon {
+        top: 100px;
+        width: 70%;
+    }
+    .nombre-y-apellido-container {
+        top: 300px;
+        font-size: 16px;
+    }
+    .diseo-y-desarrollo {
+        font-size: 30px;
+    }
+    .nombre-y-apellido a {
+        word-break: break-all;
+    }
+}
