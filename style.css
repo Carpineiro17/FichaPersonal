@@ -1,123 +1,90 @@
-/* Estilos base */
-.frame-child {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: #ef579d;
-    width: 100%;
-    height: 129px;
+* {
+    box-sizing: border-box;
 }
-.frame-item {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background-color: #ef579d;
-    width: 100%;
-    height: 102px;
-}
-.carofoto-1-icon {
-    position: absolute;
-    top: 166px;
-    left: 24px;
-    border-radius: 50px;
-    width: 377px;
-    height: 528px;
-    object-fit: cover;
-}
-.uade-1-icon {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 216px;
-    height: 72px;
-    object-fit: cover;
-}
-.nombre-y-apellido {
-    margin: 0;
-}
-.nombre-y-apellido-container {
-    position: absolute;
-    top: 166px;
-    left: 420px;
-    display: inline-block;
-    width: calc(100% - 450px);
-    height: auto;
-    padding-top: 10px;
-}
-.diseo-y-desarrollo {
-    position: absolute;
-    top: 33px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3rem;
-    font-family: Marcellus;
-    color: #fff;
-    text-align: center;
-    width: 90%;
-    height: auto;
-}
-.rectangle-parent {
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-    min-height: 100vh;
-    overflow: hidden;
-    text-align: left;
-    font-size: 24px;
-    color: #000;
+body {
     font-family: Mandali;
-    padding-bottom: 102px; /* para evitar que el contenido se superponga con el footer */
+    font-size: 16pt;
+    background-color: ffffff;
+}
+header {
+    background: #ef579d;
+    align-content: center;
+    padding-top: 20px;
+}
+.contenedor{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#nombre{
+    font-family: Marcellus;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.fila::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.imagenContenedor{ 
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#imagen {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 25px;
+    padding-bottom: 20px;
+}
+.contenido {
+    text-align: justify;
+    padding-inline: 30px;
+    font-size: 30px;
+}
+footer {
+    background: #ef579d;
+    align-content: center;
+}
+.uade-1-icon{
+    text-align: center;
+    margin-top: 10px;
+}
+#logo {
+    height: 100%;
+    width: auto;
+    max-height: 70px;
+    vertical-align: sub;
 }
 
-/* Media Queries para Responsividad */
-@media (max-width: 1024px) {
-    .nombre-y-apellido-container {
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        top: 700px; /* Ajustar si es necesario */
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
     }
+} 
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 
-    .carofoto-1-icon {
-        position: static;
-        margin: 0 auto;
-        display: block;
-        width: 50%;
-        height: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .diseo-y-desarrollo {
-        font-size: 1.5rem;
-    }
-
-    .nombre-y-apellido-container {
-        top: auto;
-        position: static;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .carofoto-1-icon {
-        width: 70%;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .diseo-y-desarrollo {
-        font-size: 1.2rem;
-    }
-
-    .nombre-y-apellido-container {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .carofoto-1-icon {
-        width: 90%;
-        height: auto;
+   .fila {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
